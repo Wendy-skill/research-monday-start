@@ -1,72 +1,58 @@
 # Research Monday Start｜科研周一启动
 
-一个面向科研工作者的 ChatGPT / Codex Skill，用于在周一快速恢复研究上下文，把分散的论文、实验、模拟、文献和会议记录整理成可执行的本周计划。
+一个温暖、可靠的科研周一启动 Skill。它会恢复上周上下文，自动识别当前科研场景，生成本周唯一目标、周一最多三项任务、25 分钟开工路径和今日科研能量卡。
 
-它会：
+A warm, evidence-aware Skill that restores last week's research context, identifies the current research mode, and creates a focused Monday plan with a 25-minute starter.
 
-- 读取上周记录与未完成事项；
-- 检查本周截止日期、会议和交付任务；
-- 汇总论文、实验、模拟和文献阅读进度；
-- 标记失败任务、等待回复和待确认问题；
-- 按 P0 / P1 / P2 排定本周优先级；
-- 只安排周一最重要的三项工作；
-- 为第一项任务生成可立即执行的 25 分钟开工包；
-- 全程区分“已确认、合理推断、待核实”，避免编造科研进度和数据。
+## ✨ 主要功能｜Highlights
 
-## 安装
+- 中英双语触发与输出，会跟随用户的主要语言。
+- 自动识别论文写作、实验、模拟、文献阅读四类场景，也能处理混合场景。
+- 默认输出一屏左右的温暖精简看板；回复“查看详情”或 “View details” 可展开完整方案。
+- 严格区分“已确认 / 合理推断 / 待核实”，避免虚构科研进度、结果、文献或截止日期。
+- 支持后续陪跑：`完成 / Done`、`卡住 / Stuck`、`改变 / Changed`、`今天收工 / Finish for today`。
 
-1. 点击仓库右上角 **Code → Download ZIP**。
-2. 解压下载文件。
-3. 找到其中的 `research-monday-start` 文件夹。
-4. 在 ChatGPT 的 Skills 页面上传该文件夹或将其压缩后上传。
-5. 安装完成后，可在对话中使用 `@research-monday-start` 或直接说“帮我开启科研周一”。
+## 📦 安装｜Install
 
-## 推荐指令
+1. 打开仓库的 **Releases** 页面并下载最新版 `research-monday-start.zip`。
+2. 在支持 Skill 导入的界面上传 ZIP；使用本地 Skills 目录的 Agent 也可以解压后安装完整文件夹。
+3. 安装后可以直接用下面的示例开始。
 
-```text
-@research-monday-start
+Open **Releases**, download the latest `research-monday-start.zip`, and import the ZIP into a Skill-compatible interface. For agents that use a local Skills directory, extract and install the complete top-level folder.
 
-读取我上周的科研记录、当前论文和模拟日志，检查本周的截止日期与会议。
-恢复论文、实验、模拟和文献阅读进度，标出失败任务、等待回复和待确认问题。
-按优先级生成本周任务，只安排周一最重要的三项工作，并为第一项生成25分钟开工包。
-所有内容必须区分“已确认、合理推断、待核实”，禁止编造进度、数据和文献。
-```
+## 🚀 使用示例｜Example prompts
 
-## 简短调用
+中文：
 
 ```text
-@research-monday-start 帮我恢复上周科研进度，并安排今天最重要的三项工作。
+开启科研周一。上周我完成了论文结果部分初稿，周四要给导师发修订稿，今天有半天时间。
 ```
 
-## 输入材料建议
+English:
 
-- 上周工作记录或任务清单；
-- 当前论文、审稿意见或导师反馈；
-- 实验记录、模拟日志和运行状态；
-- 文献阅读记录；
-- 本周会议、截止日期和交付要求。
+```text
+Start my research week. I read six papers last week, my notes are scattered, and my literature review section is due on Friday.
+```
 
-材料不完整时，Skill 会继续生成部分结果并明确标出缺口；材料不足以恢复进度时，它只会索取最多三类关键资料。
+## 🧭 四类科研场景｜Four research modes
 
-## 输出结构
+| 场景 / Mode | Skill 会优先关注 / Priority |
+| --- | --- |
+| 论文写作 / Writing | 章节、图表、意见回复、论点与证据、可提交文本 |
+| 实验 / Experiment | 设备、样品、方案、安全、数据记录、失败原因与重做成本 |
+| 模拟 / Simulation | 算例、参数、日志、队列、收敛、重跑与后处理 |
+| 文献阅读 / Literature | 研究问题、检索范围、阅读队列、证据表与引用落点 |
 
-1. 时间范围与资料覆盖
-2. 上周科研状态快照
-3. 失败、等待与待确认事项
-4. 本周截止日期、会议与交付
-5. 本周优先级：P0 / P1 / P2
-6. 周一任务：最多三项
-7. 第一项任务的 25 分钟开工包
-8. 仍需用户确认的问题
+## 🤖 兼容性｜Compatibility
 
-## 适用场景
+该 Skill 可用于 ChatGPT 和 Codex。其他能够读取标准 Skill 文件夹（包含 `SKILL.md`）的 Agent 也可以尝试使用；实际触发和工具能力取决于具体平台。
 
-适用于论文写作与修回、实验研究、数值模拟、文献阅读、导师会议准备，以及多个科研任务并行推进的情况。
+This Skill is designed for ChatGPT and Codex. Other agents that can load a standard Skill folder containing `SKILL.md` may also use it, subject to each platform's triggering and tool support.
 
-## Author
+## 作者｜Author
 
 wendy.z
 
-## License
+## 许可证｜Licence
 
-MIT License
+MIT
