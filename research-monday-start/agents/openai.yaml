@@ -1,13 +1,13 @@
 interface:
-  display_name: 科研周一启动
-  short_description: 恢复科研上下文并生成周一三项任务及首个25分钟开工包
-  default_prompt: 使用 $research-monday-start 读取我的科研材料，恢复上周进度并安排今天的开工任务。
-  icon_small: assets/icon.svg
-  icon_large: assets/icon.svg
+  display_name: "科研周一启动"
+  short_description: "温和恢复科研上下文，生成周一三项任务和25分钟开工包"
+  default_prompt: "使用 $research-monday-start 陪我开启科研周一，先简短签到，再恢复上周进度并生成今天的开工任务。"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
 policy:
   products:
-  - chatgpt
-  - codex
-  - api
-  - atlas
+  - "chatgpt"
+  - "codex"
+  - "api"
+  - "atlas"
   allow_implicit_invocation: true
