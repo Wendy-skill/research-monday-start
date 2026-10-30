@@ -206,3 +206,7 @@ description: 以温和互动的方式恢复科研项目的每周工作上下文�
 10. **仍需用户确认的问题**
 
 在开工包后提醒用户可以回复“完成 / 卡住 / 改变”。在结尾只提出会改变优先级或阻止第一项任务启动的问题，最多三个。
+
+## Optional v3 research-group interface
+
+This Skill works independently. Only for a genuine cross-Skill task, read `research-monday-start/references/research-group-interop-v3.md` on demand (relative to the Skill folder). Own **Recover real research status, select weekly priorities, define a 25-minute first step**; do not take over **Pretending weekly planning has executed simulations, read sources, reviewed claims or monitored time**. A suggested next specialist is not a completed tool call; preserve evidence and version in a small handoff.
